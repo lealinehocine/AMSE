@@ -16,34 +16,34 @@ class SeriesPage extends StatelessWidget {
         } else if (snapshot.hasError) {
           return Center(child: Text('Erreur de chargement des données.'));
         } else if (snapshot.hasData) {
-          List<Media> movies = snapshot.data!.where((media) => media.type == 'series').toList();
+          List<Media> series = snapshot.data!.where((media) => media.type == 'series').toList();
 
           return ListView.builder(
-            itemCount: movies.length,
+            itemCount: series.length,
             itemBuilder: (context, index) {
-              var movie = movies[index];
+              var serie = series[index];
               var appState = Provider.of<MyAppState>(context);
-              bool isFavorite = appState.isFavorite(movie);
+              bool isFavorite = appState.isFavorite(serie);
 
               return Card(
                 margin: const EdgeInsets.all(10),
                 child: ListTile(
                   contentPadding: const EdgeInsets.all(10),
-                  leading: Image.asset(movie.imageUrl, width: 50, height: 75),
-                  title: Text(movie.title),
-                  subtitle: Text(movie.genre),
+                  leading: Image.asset(serie.imageUrl, width: 50, height: 75),
+                  title: Text(serie.title),
+                  subtitle: Text(serie.genre),
                   trailing: ElevatedButton.icon(
                     onPressed: () {
-                      appState.toggleFavorite(movie); // Toggle le favori
+                      appState.toggleFavorite(serie); // Toggle le favori
                     },
-                    icon: Icon(isFavorite ? Icons.favorite : Icons.favorite_border),
+                    icon: Icon(appState.isFavorite(serie  ) ? Icons.favorite : Icons.favorite_border),
                     label: Text('Like'),
                   ),
                   onTap: () {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => MediaDetailPage(media: movie),
+                        builder: (context) => MediaDetailPage(media: serie),
                       ),
                     );
                   },
@@ -52,7 +52,7 @@ class SeriesPage extends StatelessWidget {
             },
           );
         } else {
-          return Center(child: Text('Aucun film trouvé.'));
+          return Center(child: Text('Aucune série trouvée.'));
         }
       },
     );

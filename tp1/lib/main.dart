@@ -1,4 +1,4 @@
-import 'pages/generator_page.dart';
+import 'pages/home_page.dart';
 import 'pages/movies_page.dart';
 import 'pages/series_page.dart';
 import 'pages/favorites_page.dart';
@@ -30,11 +30,11 @@ class MyApp extends StatelessWidget {
 }
 
 class MyAppState extends ChangeNotifier {
-  List<Media> favorites = [];
+List<Media> favorites = []; // Liste des favoris basée sur Media
 
   void toggleFavorite(Media media) {
-    if (favorites.contains(media)) {
-      favorites.remove(media);
+    if (favorites.any((fav) => fav.title == media.title)) {
+      favorites.removeWhere((fav) => fav.title == media.title);
     } else {
       favorites.add(media);
     }
@@ -42,7 +42,7 @@ class MyAppState extends ChangeNotifier {
   }
 
   bool isFavorite(Media media) {
-    return favorites.contains(media);
+    return favorites.any((fav) => fav.title == media.title);
   }
 }
 
@@ -60,7 +60,7 @@ class _MyHomePageState extends State<MyHomePage> {
     Widget page;
     switch (selectedIndex) {
       case 0:
-        page = GeneratorPage();
+        page = HomePage();
         break;
       case 1:
         page = MoviesPage();

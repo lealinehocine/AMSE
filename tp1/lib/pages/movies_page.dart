@@ -36,7 +36,7 @@ class MoviesPage extends StatelessWidget {
                     onPressed: () {
                       appState.toggleFavorite(movie); // Toggle le favori
                     },
-                    icon: Icon(isFavorite ? Icons.favorite : Icons.favorite_border),
+                    icon: Icon(appState.isFavorite(movie) ? Icons.favorite : Icons.favorite_border),
                     label: Text('Like'),
                   ),
                   onTap: () {
