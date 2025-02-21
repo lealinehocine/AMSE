@@ -7,10 +7,10 @@ class FavoritesPage extends StatelessWidget {
   Widget build(BuildContext context) {
     var appState = context.watch<MyAppState>();
 
-    if (appState.favorites.isEmpty) {
+   // if (appState.favorites.isEmpty) {
       return Center(
         child: Text('No favorites yet.'),
-      );
+    /*  );
     }
 
     return ListView(
@@ -25,7 +25,7 @@ class FavoritesPage extends StatelessWidget {
             leading: Icon(Icons.favorite),
             title: Text(pair.asLowerCase),
           ),
-      ],
+      ],*/
     );
   }
 }

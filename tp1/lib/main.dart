@@ -1,9 +1,8 @@
-import 'package:english_words/english_words.dart'; //à supprimer
-
 import 'pages/generator_page.dart';
 import 'pages/movies_page.dart';
 import 'pages/series_page.dart';
 import 'pages/favorites_page.dart';
+import 'models/media.dart'; // Importer le modèle Media
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -31,27 +30,21 @@ class MyApp extends StatelessWidget {
 }
 
 class MyAppState extends ChangeNotifier {
-  var current = WordPair.random();
+  List<Media> favorites = [];
 
-  void getNext() {
-    current = WordPair.random();
-    notifyListeners();
-  }
-
-  var favorites = <WordPair>[];
-
-  void toggleFavorite() {
-    if (favorites.contains(current)) {
-      favorites.remove(current);
+  void toggleFavorite(Media media) {
+    if (favorites.contains(media)) {
+      favorites.remove(media);
     } else {
-      favorites.add(current);
+      favorites.add(media);
     }
     notifyListeners();
   }
 
+  bool isFavorite(Media media) {
+    return favorites.contains(media);
+  }
 }
-
-
 
 class MyHomePage extends StatefulWidget {
   @override
@@ -73,7 +66,7 @@ class _MyHomePageState extends State<MyHomePage> {
         page = MoviesPage();
         break;
       case 2:
-        page = TVShowsPage();
+        page = SeriesPage();
         break;
       case 3:
         page = FavoritesPage();
@@ -83,8 +76,6 @@ class _MyHomePageState extends State<MyHomePage> {
     }
 
 
-    return LayoutBuilder(
-      builder: (context, constraints) {
     return Scaffold(
       body: Container(
         color: Theme.of(context).colorScheme.primaryContainer,
@@ -103,7 +94,7 @@ class _MyHomePageState extends State<MyHomePage> {
             icon: Icon(Icons.home),
             label: 'Home',
           ),
-        BottomNavigationBarItem(
+          BottomNavigationBarItem(
             icon: Icon(Icons.movie),
             label: 'Movies',
           ),
@@ -118,7 +109,5 @@ class _MyHomePageState extends State<MyHomePage> {
         ],
       ),
     );
-          }
-        );
       }
 }
