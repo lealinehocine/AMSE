@@ -1,0 +1,122 @@
+[
+    {
+    "title": "Inception",
+    "imageUrl": "assets/images/inception.jpg",
+    "description": "A mind-bending thriller by Christopher Nolan.",
+    "type": "movie"
+    },
+    {
+    "title": "Interstellar",
+    "imageUrl": "assets/images/interstellar.jpg",
+    "description": "A space exploration epic directed by Christopher Nolan.",
+    "type": "movie"
+    },
+    {
+    "title": "The Dark Knight",
+    "imageUrl": "assets/images/dark_knight.jpg",
+    "description": "Batman battles the Joker in this intense thriller.",
+    "type": "movie"
+    },
+    {
+    "title": "The Shawshank Redemption",
+    "imageUrl": "assets/images/shawshank.jpg",
+    "description": "Two imprisoned men bond over years.",
+    "type": "movie"
+    },
+    {
+    "title": "Pulp Fiction",
+    "imageUrl": "assets/images/pulp_fiction.jpg",
+    "description": "A crime drama with intertwining stories.",
+    "type": "movie"
+    },
+    {
+    "title": "Forrest Gump",
+    "imageUrl": "assets/images/forrest_gump.jpg",
+    "description": "The life story of a simple man with a big heart.",
+    "type": "movie"
+    },
+    {
+    "title": "The Matrix",
+    "imageUrl": "assets/images/matrix.jpg",
+    "description": "A hacker discovers reality isn't what it seems.",
+    "type": "movie"
+    },
+    {
+    "title": "Fight Club",
+    "imageUrl": "assets/images/fight_club.jpg",
+    "description": "An insomniac meets a soap maker and starts a club.",
+    "type": "movie"
+    },
+    {
+    "title": "Gladiator",
+    "imageUrl": "assets/images/gladiator.jpg",
+    "description": "A Roman general seeks revenge for his family.",
+    "type": "movie"
+    },
+    {
+    "title": "The Godfather",
+    "imageUrl": "assets/images/godfather.jpg",
+    "description": "A mafia dynasty's rise and fall.",
+    "type": "movie"
+    },
+    {
+    "title": "Breaking Bad",
+    "imageUrl": "assets/images/breaking_bad.jpg",
+    "description": "A chemistry teacher becomes a meth kingpin.",
+    "type": "series"
+    },
+    {
+    "title": "Game of Thrones",
+    "imageUrl": "assets/images/game_of_thrones.jpg",
+    "description": "Noble families vie for control of the Iron Throne.",
+    "type": "series"
+    },
+    {
+    "title": "Stranger Things",
+    "imageUrl": "assets/images/stranger_things.jpg",
+    "description": "Mysteries unfold in a small town after a boy disappears.",
+    "type": "series"
+    },
+    {
+    "title": "The Office",
+    "imageUrl": "assets/images/the_office.jpg",
+    "description": "A mockumentary about office workers.",
+    "type": "series"
+    },
+    {
+    "title": "Friends",
+    "imageUrl": "assets/images/friends.jpg",
+    "description": "Six friends navigate life and love in New York.",
+    "type": "series"
+    },
+    {
+    "title": "The Crown",
+    "imageUrl": "assets/images/the_crown.jpg",
+    "description": "The life of Queen Elizabeth II.",
+    "type": "series"
+    },
+    {
+    "title": "The Mandalorian",
+    "imageUrl": "assets/images/mandalorian.jpg",
+    "description": "A bounty hunter's journey in the Star Wars universe.",
+    "type": "series"
+    },
+    {
+    "title": "Sherlock",
+    "imageUrl": "assets/images/sherlock.jpg",
+    "description": "A modern take on Sherlock Holmes.",
+    "type": "series"
+    },
+    {
+    "title": "Peaky Blinders",
+    "imageUrl": "assets/images/peaky_blinders.jpg",
+    "description": "A gangster family in post-WWI Birmingham.",
+    "type": "series"
+    },
+    {
+    "title": "House of Cards",
+    "imageUrl": "assets/images/house_of_cards.jpg",
+    "description": "Political drama in the corridors of power.",
+    "type": "series"
+    }
+]
