@@ -22,7 +22,6 @@ dev_dependencies:
 flutter:
   uses-material-design: true
 
-  flutter:
   assets:
     - assets/data/media.json
     - assets/images/
