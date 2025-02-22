@@ -1,13 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:tp1/models/media.dart';  // Le modèle de données pour accéder aux films et séries
+import 'package:provider/provider.dart';
+import 'package:tp1/models/media.dart';
+import 'package:tp1/main.dart'; // Pour accéder à MyAppState
 
 class MediaDetailPage extends StatelessWidget {
-  final Media media;  // On reçoit l'objet Media (Film ou Série)
+  final Media media;
 
   const MediaDetailPage({Key? key, required this.media}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    var appState = Provider.of<MyAppState>(context);
+    bool isFavorite = appState.isFavorite(media);
+
     return Scaffold(
       appBar: AppBar(
         title: Text(media.title),
@@ -17,50 +22,58 @@ class MediaDetailPage extends StatelessWidget {
         padding: const EdgeInsets.all(16.0),
         child: ListView(
           children: [
-            
-          AspectRatio(
-            aspectRatio: 2 / 3, // Format classique des affiches de films
-            child: Image.asset(
-              media.imageUrl,
-              width: double.infinity,
-              fit: BoxFit.contain, // Permet de voir l'image entière sans la couper
+            AspectRatio(
+              aspectRatio: 2 / 3,
+              child: Image.asset(
+                media.imageUrl,
+                width: double.infinity,
+                fit: BoxFit.contain,
+              ),
             ),
-          ),
             const SizedBox(height: 20),
-            // Le titre du film ou de la série
-            Text(
-              media.title,
-              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),  // Style personnalisé
+            // Titre + Bouton Like sur la même ligne
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Expanded(
+                  child: Text(
+                    media.title,
+                    style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                  ),
+                ),
+                ElevatedButton.icon(
+                  onPressed: () {
+                    appState.toggleFavorite(media);
+                  },
+                  icon: Icon(isFavorite ? Icons.favorite : Icons.favorite_border),
+                  label: Text(isFavorite ? 'Unlike' : 'Like'),
+                ),
+              ],
             ),
             const SizedBox(height: 10),
-            // Le genre
             Text(
               "Genre: ${media.genre}",
-              style: TextStyle(fontSize: 16, color: Colors.grey),  // Style personnalisé
+              style: TextStyle(fontSize: 16, color: Colors.grey),
             ),
             const SizedBox(height: 10),
-            // La durée
             Text(
               "Durée: ${media.duration}",
-              style: TextStyle(fontSize: 16, color: Colors.grey),  // Style personnalisé
+              style: TextStyle(fontSize: 16, color: Colors.grey),
             ),
             const SizedBox(height: 10),
-            // La date de sortie
             Text(
               "Date de sortie: ${media.releaseDate}",
-              style: TextStyle(fontSize: 16, color: Colors.grey),  // Style personnalisé
+              style: TextStyle(fontSize: 16, color: Colors.grey),
             ),
             const SizedBox(height: 10),
-            // Le réalisateur
             Text(
               "Réalisateur: ${media.director}",
-              style: TextStyle(fontSize: 16, color: Colors.grey),  // Style personnalisé
+              style: TextStyle(fontSize: 16, color: Colors.grey),
             ),
             const SizedBox(height: 20),
-            // La description
             Text(
               media.description,
-              style: TextStyle(fontSize: 14, color: Colors.black87),  // Style personnalisé
+              style: TextStyle(fontSize: 14, color: Colors.black87),
             ),
           ],
         ),
