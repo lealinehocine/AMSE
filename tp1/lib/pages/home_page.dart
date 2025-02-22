@@ -4,8 +4,10 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Theme.of(context).colorScheme.primaryContainer,  
       appBar: AppBar(
         title: Text('Accueil'),
+        backgroundColor: Theme.of(context).colorScheme.primary,  
       ),
       body: Center(
         child: Column(
@@ -21,6 +23,12 @@ class HomePage extends StatelessWidget {
               'Découvrez vos films et séries préférés',
               style: TextStyle(fontSize: 18),
               textAlign: TextAlign.center,
+            ),
+            SizedBox(height: 20),  
+            Image.asset(
+              '../../assets/images/image_accueil.png',  
+              width: 200,  
+              height: 200,
             ),
           ],
         ),

@@ -15,7 +15,7 @@ class FavoritesPage extends StatelessWidget {
     return DefaultTabController(
       length: filters.length,  // On a 3 onglets
       child: Scaffold(
-        backgroundColor: Theme.of(context).colorScheme.background,  // Utilise la couleur de fond définie dans le thème
+        backgroundColor: Theme.of(context).colorScheme.primaryContainer,  // Utilise la couleur de fond définie dans le thème
         appBar: AppBar(
           bottom: TabBar(
             tabs: filters.map((filter) {

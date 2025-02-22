@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:tp1/models/media.dart';
-import 'package:tp1/main.dart'; // Pour accéder à MyAppState
+import 'package:tp1/main.dart'; 
 
 class MediaDetailPage extends StatelessWidget {
   final Media media;
@@ -16,7 +16,7 @@ class MediaDetailPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(media.title),
-        backgroundColor: Theme.of(context).colorScheme.primary,
+        backgroundColor: Theme.of(context).colorScheme.primaryContainer,
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -31,7 +31,7 @@ class MediaDetailPage extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 20),
-            // Titre + Bouton Like sur la même ligne
+            
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
