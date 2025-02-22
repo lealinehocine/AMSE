@@ -1,10 +1,10 @@
+import 'models/media.dart'; 
+import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'pages/home_page.dart';
 import 'pages/movies_page.dart';
 import 'pages/series_page.dart';
 import 'pages/favorites_page.dart';
-import 'models/media.dart'; 
-import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 
 void main() {
   runApp(MyApp());
@@ -29,6 +29,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
+//Gestion des favoris
 class MyAppState extends ChangeNotifier {
 List<Media> favorites = []; // Liste des favoris basée sur Media
 

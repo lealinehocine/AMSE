@@ -7,13 +7,11 @@ import 'package:tp1/pages/media_detail_page.dart';
 class FavoritesPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    var appState = Provider.of<MyAppState>(context);
     
-    // Définir les filtres (Todo, Film, Serie)
     List<String> filters = ['Tout', 'Films', 'Séries'];
 
     return DefaultTabController(
-      length: filters.length,  // On a 3 onglets
+      length: filters.length,  
       child: Scaffold(
         backgroundColor: Theme.of(context).colorScheme.primaryContainer,  // Utilise la couleur de fond définie dans le thème
         appBar: AppBar(
@@ -23,19 +21,17 @@ class FavoritesPage extends StatelessWidget {
                 text: filter,
               );
             }).toList(),
-            labelColor: Colors.black,  // Mets les textes des onglets en noir
-            unselectedLabelColor: Colors.black, // Mets les textes non sélectionnés en noir aussi
-            indicatorColor: Theme.of(context).colorScheme.primary,  // Couleur de l'indicateur
+            labelColor: Colors.black,  
+            unselectedLabelColor: Colors.black, 
+            indicatorColor: Theme.of(context).colorScheme.primary,  
           ),
-          backgroundColor: Theme.of(context).colorScheme.primary,  // Couleur de fond de l'AppBar
+          backgroundColor: Theme.of(context).colorScheme.primary,  
         ),
         body: TabBarView(
           children: [
-            // Onglet "Tout" : Affiche tous les favoris
+
             FavoriteList(filter: 'all'),
-            // Onglet "Film" : Affiche seulement les favoris de type "movie"
             FavoriteList(filter: 'movie'),
-            // Onglet "Série" : Affiche seulement les favoris de type "series"
             FavoriteList(filter: 'series'),
           ],
         ),
@@ -76,10 +72,10 @@ class FavoriteList extends StatelessWidget {
                   trailing: IconButton(
                     icon: Icon(
                       isFavorite ? Icons.favorite : Icons.favorite_border,
-                      color: isFavorite ? Theme.of(context).colorScheme.secondary : null, // Icône rouge si favori
+                      color: isFavorite ? Theme.of(context).colorScheme.secondary : null, 
                     ),
                     onPressed: () {
-                      appState.toggleFavorite(media);  // Basculer l'état favori
+                      appState.toggleFavorite(media); 
                     },
                   ),
                   onTap: () {

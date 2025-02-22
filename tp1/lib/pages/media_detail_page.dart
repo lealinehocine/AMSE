@@ -50,6 +50,7 @@ class MediaDetailPage extends StatelessWidget {
                 ),
               ],
             ),
+            //Informations sur le film
             const SizedBox(height: 10),
             Text(
               "Genre: ${media.genre}",

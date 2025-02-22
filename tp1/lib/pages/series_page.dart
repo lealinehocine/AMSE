@@ -3,7 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:tp1/models/media.dart';
 import 'package:tp1/services/media_service.dart';
 import 'package:tp1/pages/media_detail_page.dart';
-import 'package:tp1/main.dart'; // Import pour accéder à MyAppState
+import 'package:tp1/main.dart'; 
 
 class SeriesPage extends StatefulWidget {
   @override
@@ -28,7 +28,7 @@ class _SeriesPageState extends State<SeriesPage> {
 
           // Extraire les genres uniques
           Set<String> genreSet = Set.from(series.map((serie) => serie.genre));
-          if (genres.length == 1) { // Ajouter les genres uniquement une fois
+          if (genres.length == 1) { 
             genres.addAll(genreSet);
           }
 
@@ -41,7 +41,7 @@ class _SeriesPageState extends State<SeriesPage> {
             children: [
               // Affichage horizontal des genres
               Container(
-                height: 60,  // Fixe une hauteur pour les genres
+                height: 60,  
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
                   itemCount: genres.length,

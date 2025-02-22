@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:tp1/main.dart';  // Assure-toi que MyAppState est importé ici
+import 'package:tp1/main.dart'; 
 
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // Accéder à l'instance de MyAppState via Provider
     var appState = Provider.of<MyAppState>(context); 
 
     // Compter les films et les séries favoris
@@ -35,7 +34,7 @@ class HomePage extends StatelessWidget {
             ),
             SizedBox(height: 20),  
             Image.asset(
-              '../../assets/images/image_accueil.png',  // Utilise le bon chemin relatif
+              '../../assets/images/image_accueil.png', 
               width: 200,  
               height: 200,
             ),

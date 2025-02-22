@@ -50,7 +50,7 @@ class _MoviesPageState extends State<MoviesPage> {
             children: [
               // Affichage horizontal des genres
               Container(
-                height: 60,  // Fixe une hauteur pour les genres
+                height: 60,  
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
                   itemCount: genres.length,
