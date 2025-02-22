@@ -20,7 +20,9 @@ Informations détaillées pour chaque média, incluant :
 - Description
 
 Catégorisation des médias en Films et Séries et possibilité de les filtrer par genre.
+
 Page regroupant les favoris dans chaque catégorie.
+
 Affichage du nombre de films et séries préférés sur la page d'accueil.
 
 
