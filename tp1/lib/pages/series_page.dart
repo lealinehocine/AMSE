@@ -5,7 +5,15 @@ import 'package:tp1/services/media_service.dart';
 import 'package:tp1/pages/media_detail_page.dart';
 import 'package:tp1/main.dart'; // Import pour accéder à MyAppState
 
-class SeriesPage extends StatelessWidget {
+class SeriesPage extends StatefulWidget {
+  @override
+  _SeriesPageState createState() => _SeriesPageState();
+}
+
+class _SeriesPageState extends State<SeriesPage> {
+  String selectedGenre = 'Tout';
+  List<String> genres = ['Tout'];
+
   @override
   Widget build(BuildContext context) {
     return FutureBuilder<List<Media>>(
@@ -18,38 +26,79 @@ class SeriesPage extends StatelessWidget {
         } else if (snapshot.hasData) {
           List<Media> series = snapshot.data!.where((media) => media.type == 'series').toList();
 
-          return ListView.builder(
-            itemCount: series.length,
-            itemBuilder: (context, index) {
-              var serie = series[index];
-              var appState = Provider.of<MyAppState>(context);
-              bool isFavorite = appState.isFavorite(serie);
+          // Extraire les genres uniques
+          Set<String> genreSet = Set.from(series.map((serie) => serie.genre));
+          if (genres.length == 1) { // Ajouter les genres uniquement une fois
+            genres.addAll(genreSet);
+          }
 
-              return Card(
-                margin: const EdgeInsets.all(10),
-                child: ListTile(
-                  contentPadding: const EdgeInsets.all(10),
-                  leading: Image.asset(serie.imageUrl, width: 50, height: 75),
-                  title: Text(serie.title),
-                  subtitle: Text(serie.genre),
-                  trailing: ElevatedButton.icon(
-                    onPressed: () {
-                      appState.toggleFavorite(serie); // Toggle le favori
-                    },
-                    icon: Icon(appState.isFavorite(serie  ) ? Icons.favorite : Icons.favorite_border),
-                    label: Text('Like'),
-                  ),
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => MediaDetailPage(media: serie),
+          // Appliquer le filtre
+          List<Media> filteredSeries = selectedGenre == 'Tout'
+              ? series
+              : series.where((serie) => serie.genre == selectedGenre).toList();
+
+          return Column(
+            children: [
+              // Affichage horizontal des genres
+              Container(
+                height: 60,  // Fixe une hauteur pour les genres
+                child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  itemCount: genres.length,
+                  itemBuilder: (context, index) {
+                    String genre = genres[index];
+                    return Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 4.0),
+                      child: ChoiceChip(
+                        label: Text(genre),
+                        selected: selectedGenre == genre,
+                        onSelected: (bool selected) {
+                          setState(() {
+                            selectedGenre = genre;
+                          });
+                        },
                       ),
                     );
                   },
                 ),
-              );
-            },
+              ),
+              Expanded(
+                child: ListView.builder(
+                  itemCount: filteredSeries.length,
+                  itemBuilder: (context, index) {
+                    var serie = filteredSeries[index];
+                    var appState = Provider.of<MyAppState>(context);
+                    bool isFavorite = appState.isFavorite(serie);
+
+                    return Card(
+                      margin: const EdgeInsets.all(10),
+                      child: ListTile(
+                        contentPadding: const EdgeInsets.all(10),
+                        leading: Image.asset(serie.imageUrl, width: 50, height: 75),
+                        title: Text(serie.title),
+                        subtitle: Text(serie.genre),
+                        trailing: IconButton(
+                          icon: Icon(
+                            isFavorite ? Icons.favorite : Icons.favorite_border,
+                          ),
+                          onPressed: () {
+                            appState.toggleFavorite(serie);
+                          },
+                        ),
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => MediaDetailPage(media: serie),
+                            ),
+                          );
+                        },
+                      ),
+                    );
+                  },
+                ),
+              ),
+            ],
           );
         } else {
           return Center(child: Text('Aucune série trouvée'));
