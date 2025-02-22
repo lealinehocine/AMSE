@@ -2,7 +2,7 @@ import 'pages/home_page.dart';
 import 'pages/movies_page.dart';
 import 'pages/series_page.dart';
 import 'pages/favorites_page.dart';
-import 'models/media.dart'; // Importer le modèle Media
+import 'models/media.dart'; 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

@@ -53,27 +53,27 @@ class MediaDetailPage extends StatelessWidget {
             const SizedBox(height: 10),
             Text(
               "Genre: ${media.genre}",
-              style: TextStyle(fontSize: 16, color: Colors.grey),
+              style: TextStyle(fontSize: 18, color: Colors.grey),
             ),
             const SizedBox(height: 10),
             Text(
               "Durée: ${media.duration}",
-              style: TextStyle(fontSize: 16, color: Colors.grey),
+              style: TextStyle(fontSize: 18, color: Colors.grey),
             ),
             const SizedBox(height: 10),
             Text(
               "Date de sortie: ${media.releaseDate}",
-              style: TextStyle(fontSize: 16, color: Colors.grey),
+              style: TextStyle(fontSize: 18, color: Colors.grey),
             ),
             const SizedBox(height: 10),
             Text(
               "Réalisateur: ${media.director}",
-              style: TextStyle(fontSize: 16, color: Colors.grey),
+              style: TextStyle(fontSize: 18, color: Colors.grey),
             ),
             const SizedBox(height: 20),
             Text(
               media.description,
-              style: TextStyle(fontSize: 14, color: Colors.black87),
+              style: TextStyle(fontSize: 16, color: Colors.black87),
             ),
           ],
         ),
