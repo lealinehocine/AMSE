@@ -52,7 +52,7 @@ class MoviesPage extends StatelessWidget {
             },
           );
         } else {
-          return Center(child: Text('Aucun film trouvé.'));
+          return Center(child: Text('Aucun film trouvé'));
         }
       },
     );

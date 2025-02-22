@@ -10,19 +10,22 @@ class MediaDetailPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(media.title),  // Le titre du film ou de la série
+        title: Text(media.title),
+        backgroundColor: Theme.of(context).colorScheme.primary,
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: ListView(
           children: [
-            // Afficher l'image en haut
-            Image.asset(
+            
+          AspectRatio(
+            aspectRatio: 2 / 3, // Format classique des affiches de films
+            child: Image.asset(
               media.imageUrl,
               width: double.infinity,
-              height: 250,  // Ajuste la taille à ton goût
-              fit: BoxFit.cover,
+              fit: BoxFit.contain, // Permet de voir l'image entière sans la couper
             ),
+          ),
             const SizedBox(height: 20),
             // Le titre du film ou de la série
             Text(

@@ -1,203 +1,202 @@
 [
-    {
-      "title": "Inception",
-      "imageUrl": "assets/images/inception.jpg",
-      "genre": "Sci-Fi",
-      "duration": "2h30min",
-      "releaseDate": "16/07/2010",
-      "director": "Christopher Nolan",
-      "type": "movie",
-      "description": "A mind-bending thriller by Christopher Nolan."
-    },
-    {
-      "title": "Interstellar",
-      "imageUrl": "assets/images/interstellar.jpg",
-      "genre": "Sci-Fi",
-      "duration": "2h42min",
-      "releaseDate": "07/11/2014",
-      "director": "Christopher Nolan",
-      "type": "movie",
-      "description": "A space exploration epic directed by Christopher Nolan."
-    },
-    {
-      "title": "The Dark Knight",
-      "imageUrl": "assets/images/dark_knight.jpg",
-      "genre": "Action",
-      "duration": "2h32min",
-      "releaseDate": "18/07/2008",
-      "director": "Christopher Nolan",
-      "type": "movie",
-      "description": "Batman battles the Joker in this intense thriller."
-    },
-    {
-      "title": "The Shawshank Redemption",
-      "imageUrl": "assets/images/shawshank.jpg",
-      "genre": "Drama",
-      "duration": "2h22min",
-      "releaseDate": "14/10/1994",
-      "director": "Frank Darabont",
-      "type": "movie",
-      "description": "Two imprisoned men bond over years."
-    },
-    {
-      "title": "Pulp Fiction",
-      "imageUrl": "assets/images/pulp_fiction.jpg",
-      "genre": "Crime",
-      "duration": "2h34min",
-      "releaseDate": "14/10/1994",
-      "director": "Quentin Tarantino",
-      "type": "movie",
-      "description": "A crime drama with intertwining stories."
-    },
-    {
-      "title": "Forrest Gump",
-      "imageUrl": "assets/images/forrest_gump.jpg",
-      "genre": "Drama",
-      "duration": "2h22min",
-      "releaseDate": "06/07/1994",
-      "director": "Robert Zemeckis",
-      "type": "movie",
-      "description": "The life story of a simple man with a big heart."
-    },
-    {
-      "title": "The Matrix",
-      "imageUrl": "assets/images/matrix.jpg",
-      "genre": "Sci-Fi",
-      "duration": "2h16min",
-      "releaseDate": "31/03/1999",
-      "director": "Lana Wachowski, Lilly Wachowski",
-      "type": "movie",
-      "description": "A hacker discovers reality isn't what it seems."
-    },
-    {
-      "title": "Fight Club",
-      "imageUrl": "assets/images/fight_club.jpg",
-      "genre": "Drama",
-      "duration": "2h19min",
-      "releaseDate": "15/10/1999",
-      "director": "David Fincher",
-      "type": "movie",
-      "description": "An insomniac meets a soap maker and starts a club."
-    },
-    {
-      "title": "Gladiator",
-      "imageUrl": "assets/images/gladiator.jpg",
-      "genre": "Action",
-      "duration": "2h35min",
-      "releaseDate": "05/05/2000",
-      "director": "Ridley Scott",
-      "type": "movie",
-      "description": "A Roman general seeks revenge for his family."
-    },
-    {
-      "title": "The Godfather",
-      "imageUrl": "assets/images/godfather.jpg",
-      "genre": "Crime",
-      "duration": "2h55min",
-      "releaseDate": "24/03/1972",
-      "director": "Francis Ford Coppola",
-      "type": "movie",
-      "description": "A mafia dynasty's rise and fall."
-    },
-    {
-      "title": "Breaking Bad",
-      "imageUrl": "assets/images/breaking_bad.jpg",
-      "genre": "Crime",
-      "duration": "0h50min",
-      "releaseDate": "20/01/2008",
-      "director": "Vince Gilligan",
-      "type": "series",
-      "description": "A chemistry teacher becomes a meth kingpin."
-    },
-    {
-      "title": "Game of Thrones",
-      "imageUrl": "assets/images/game_of_thrones.jpg",
-      "genre": "Fantasy",
-      "duration": "1h00min",
-      "releaseDate": "17/04/2011",
-      "director": "David Benioff, D.B. Weiss",
-      "type": "series",
-      "description": "Noble families vie for control of the Iron Throne."
-    },
-    {
-      "title": "Stranger Things",
-      "imageUrl": "assets/images/stranger_things.jpg",
-      "genre": "Sci-Fi",
-      "duration": "0h50min",
-      "releaseDate": "15/07/2016",
-      "director": "The Duffer Brothers",
-      "type": "series",
-      "description": "Mysteries unfold in a small town after a boy disappears."
-    },
-    {
-      "title": "The Office",
-      "imageUrl": "assets/images/the_office.jpg",
-      "genre": "Comedy",
-      "duration": "0h22min",
-      "releaseDate": "24/03/2005",
-      "director": "Greg Daniels",
-      "type": "series",
-      "description": "A mockumentary about office workers."
-    },
-    {
-      "title": "Friends",
-      "imageUrl": "assets/images/friends.jpg",
-      "genre": "Comedy",
-      "duration": "0h22min",
-      "releaseDate": "22/09/1994",
-      "director": "David Crane, Marta Kauffman",
-      "type": "series",
-      "description": "Six friends navigate life and love in New York."
-    },
-    {
-      "title": "The Crown",
-      "imageUrl": "assets/images/the_crown.jpg",
-      "genre": "Drama",
-      "duration": "0h50min",
-      "releaseDate": "04/11/2016",
-      "director": "Peter Morgan",
-      "type": "series",
-      "description": "The life of Queen Elizabeth II."
-    },
-    {
-      "title": "The Mandalorian",
-      "imageUrl": "assets/images/mandalorian.jpg",
-      "genre": "Sci-Fi",
-      "duration": "0h40min",
-      "releaseDate": "12/11/2019",
-      "director": "Jon Favreau",
-      "type": "series",
-      "description": "A bounty hunter's journey in the Star Wars universe."
-    },
-    {
-      "title": "Sherlock",
-      "imageUrl": "assets/images/sherlock.jpg",
-      "genre": "Crime",
-      "duration": "0h50min",
-      "releaseDate": "25/07/2010",
-      "director": "Mark Gatiss, Steven Moffat",
-      "type": "series",
-      "description": "A modern take on Sherlock Holmes."
-    },
-    {
-      "title": "Peaky Blinders",
-      "imageUrl": "assets/images/peaky_blinders.jpg",
-      "genre": "Crime",
-      "duration": "0h50min",
-      "releaseDate": "12/09/2013",
-      "director": "Steven Knight",
-      "type": "series",
-      "description": "A gangster family in post-WWI Birmingham."
-    },
-    {
-      "title": "House of Cards",
-      "imageUrl": "assets/images/house_of_cards.jpg",
-      "genre": "Drama",
-      "duration": "0h50min",
-      "releaseDate": "01/02/2013",
-      "director": "Beau Willimon",
-      "type": "series",
-      "description": "Political drama in the corridors of power."
-    }
-  ]
-  
+  {
+    "title": "Inception",
+    "imageUrl": "assets/images/inception.jpg",
+    "genre": "Science-fiction",
+    "duration": "2h30min",
+    "releaseDate": "16/07/2010",
+    "director": "Christopher Nolan",
+    "type": "movie",
+    "description": "Un thriller captivant réalisé par Christopher Nolan."
+  },
+  {
+    "title": "Interstellar",
+    "imageUrl": "assets/images/interstellar.jpg",
+    "genre": "Science-fiction",
+    "duration": "2h42min",
+    "releaseDate": "07/11/2014",
+    "director": "Christopher Nolan",
+    "type": "movie",
+    "description": "Une épopée spatiale réalisée par Christopher Nolan."
+  },
+  {
+    "title": "The Dark Knight",
+    "imageUrl": "assets/images/dark_knight.jpg",
+    "genre": "Action",
+    "duration": "2h32min",
+    "releaseDate": "18/07/2008",
+    "director": "Christopher Nolan",
+    "type": "movie",
+    "description": "Batman affronte le Joker dans ce thriller intense."
+  },
+  {
+    "title": "Les Évadés",
+    "imageUrl": "assets/images/shawshank.jpg",
+    "genre": "Drame",
+    "duration": "2h22min",
+    "releaseDate": "14/10/1994",
+    "director": "Frank Darabont",
+    "type": "movie",
+    "description": "Deux prisonniers tissent un lien au fil des années."
+  },
+  {
+    "title": "Pulp Fiction",
+    "imageUrl": "assets/images/pulp_fiction.jpg",
+    "genre": "Policier",
+    "duration": "2h34min",
+    "releaseDate": "14/10/1994",
+    "director": "Quentin Tarantino",
+    "type": "movie",
+    "description": "Un drame criminel avec des histoires entremêlées."
+  },
+  {
+    "title": "Forrest Gump",
+    "imageUrl": "assets/images/forrest_gump.jpg",
+    "genre": "Drame",
+    "duration": "2h22min",
+    "releaseDate": "06/07/1994",
+    "director": "Robert Zemeckis",
+    "type": "movie",
+    "description": "L'histoire d'un homme simple au grand cœur."
+  },
+  {
+    "title": "Matrix",
+    "imageUrl": "assets/images/matrix.jpg",
+    "genre": "Science-fiction",
+    "duration": "2h16min",
+    "releaseDate": "31/03/1999",
+    "director": "Lana Wachowski, Lilly Wachowski",
+    "type": "movie",
+    "description": "Un hacker découvre que la réalité n'est pas ce qu'elle semble être."
+  },
+  {
+    "title": "Fight Club",
+    "imageUrl": "assets/images/fight_club.jpg",
+    "genre": "Drame",
+    "duration": "2h19min",
+    "releaseDate": "15/10/1999",
+    "director": "David Fincher",
+    "type": "movie",
+    "description": "Un insomniaque rencontre un fabricant de savon et fonde un club."
+  },
+  {
+    "title": "Gladiator",
+    "imageUrl": "assets/images/gladiator.jpg",
+    "genre": "Action",
+    "duration": "2h35min",
+    "releaseDate": "05/05/2000",
+    "director": "Ridley Scott",
+    "type": "movie",
+    "description": "Un général romain cherche à venger sa famille."
+  },
+  {
+    "title": "Le Parrain",
+    "imageUrl": "assets/images/godfather.jpg",
+    "genre": "Policier",
+    "duration": "2h55min",
+    "releaseDate": "24/03/1972",
+    "director": "Francis Ford Coppola",
+    "type": "movie",
+    "description": "L'ascension et la chute d'une dynastie mafieuse."
+  },
+  {
+    "title": "Breaking Bad",
+    "imageUrl": "assets/images/breaking_bad.jpg",
+    "genre": "Policier",
+    "duration": "0h50min",
+    "releaseDate": "20/01/2008",
+    "director": "Vince Gilligan",
+    "type": "series",
+    "description": "Un professeur de chimie devient baron de la méthamphétamine."
+  },
+  {
+    "title": "Game of Thrones",
+    "imageUrl": "assets/images/game_of_thrones.jpg",
+    "genre": "Fantastique",
+    "duration": "1h00min",
+    "releaseDate": "17/04/2011",
+    "director": "David Benioff, D.B. Weiss",
+    "type": "series",
+    "description": "Des familles nobles luttent pour le Trône de Fer."
+  },
+  {
+    "title": "Stranger Things",
+    "imageUrl": "assets/images/stranger_things.jpg",
+    "genre": "Science-fiction",
+    "duration": "0h50min",
+    "releaseDate": "15/07/2016",
+    "director": "The Duffer Brothers",
+    "type": "series",
+    "description": "Des mystères émergent dans une petite ville après la disparition d'un garçon."
+  },
+  {
+    "title": "The Office",
+    "imageUrl": "assets/images/the_office.jpg",
+    "genre": "Comédie",
+    "duration": "0h22min",
+    "releaseDate": "24/03/2005",
+    "director": "Greg Daniels",
+    "type": "series",
+    "description": "Un faux documentaire sur la vie de bureau."
+  },
+  {
+    "title": "Friends",
+    "imageUrl": "assets/images/friends.jpg",
+    "genre": "Comédie",
+    "duration": "0h22min",
+    "releaseDate": "22/09/1994",
+    "director": "David Crane, Marta Kauffman",
+    "type": "series",
+    "description": "Six amis naviguent entre amour et amitié à New York."
+  },
+  {
+    "title": "The Crown",
+    "imageUrl": "assets/images/the_crown.jpg",
+    "genre": "Drame",
+    "duration": "0h50min",
+    "releaseDate": "04/11/2016",
+    "director": "Peter Morgan",
+    "type": "series",
+    "description": "La vie de la reine Élisabeth II."
+  },
+  {
+    "title": "The Mandalorian",
+    "imageUrl": "assets/images/mandalorian.jpg",
+    "genre": "Science-fiction",
+    "duration": "0h40min",
+    "releaseDate": "12/11/2019",
+    "director": "Jon Favreau",
+    "type": "series",
+    "description": "Le parcours d'un chasseur de primes dans l'univers de Star Wars."
+  },
+  {
+    "title": "Sherlock",
+    "imageUrl": "assets/images/sherlock.jpg",
+    "genre": "Policier",
+    "duration": "0h50min",
+    "releaseDate": "25/07/2010",
+    "director": "Mark Gatiss, Steven Moffat",
+    "type": "series",
+    "description": "Une adaptation moderne des aventures de Sherlock Holmes."
+  },
+  {
+    "title": "Peaky Blinders",
+    "imageUrl": "assets/images/peaky_blinders.jpg",
+    "genre": "Policier",
+    "duration": "0h50min",
+    "releaseDate": "12/09/2013",
+    "director": "Steven Knight",
+    "type": "series",
+    "description": "Une famille de gangsters dans le Birmingham d'après-guerre."
+  },
+  {
+    "title": "House of Cards",
+    "imageUrl": "assets/images/house_of_cards.jpg",
+    "genre": "Drame",
+    "duration": "0h50min",
+    "releaseDate": "01/02/2013",
+    "director": "Beau Willimon",
+    "type": "series",
+    "description": "Un drame politique dans les coulisses du pouvoir."
+  }
+]

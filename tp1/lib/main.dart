@@ -92,19 +92,19 @@ class _MyHomePageState extends State<MyHomePage> {
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
-            label: 'Home',
+            label: 'Accueil',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.movie),
-            label: 'Movies',
+            label: 'Films',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.tv),
-            label: 'TV Shows',
+            label: 'Séries',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.favorite),
-            label: 'Favorites',
+            label: 'Favoris',
           ),
         ],
       ),

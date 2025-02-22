@@ -52,7 +52,7 @@ class SeriesPage extends StatelessWidget {
             },
           );
         } else {
-          return Center(child: Text('Aucune série trouvée.'));
+          return Center(child: Text('Aucune série trouvée'));
         }
       },
     );
