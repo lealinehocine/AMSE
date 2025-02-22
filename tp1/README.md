@@ -9,8 +9,8 @@ Les utilisateurs peuvent également organiser les médias par catégorie (films 
 
 ## Fonctionnalités
 
-# Affichage d'une liste de films et de séries.
-# Informations détaillées pour chaque média, incluant :
+Affichage d'une liste de films et de séries.
+Informations détaillées pour chaque média, incluant :
 - Titre
 - Image de couverture
 - Genre
@@ -19,9 +19,9 @@ Les utilisateurs peuvent également organiser les médias par catégorie (films 
 - Réalisateur
 - Description
 
-# Catégorisation des médias en Films et Séries et possibilité de les filtrer par genre.
-# Page regroupant les favoris dans chaque catégorie.
-# Affichage du nombre de films et séries préférés sur la page d'accueil.
+Catégorisation des médias en Films et Séries et possibilité de les filtrer par genre.
+Page regroupant les favoris dans chaque catégorie.
+Affichage du nombre de films et séries préférés sur la page d'accueil.
 
 
 ## Structure du projet
