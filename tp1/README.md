@@ -37,3 +37,16 @@ Chaque page affichée dans l'application est liée à un fichier spécifique de 
 - series_page.dart : Affiche toutes les séries
 - media_detail_page.dart  : Affiche les détails d'un film ou d'une série.
 - favorites_page.dart : Page des favoris.
+
+
+## Installation
+
+Etapes d'installation et d'exécution:
+
+git clone https://github.com/lealinehocine/AMSE.git
+
+cd AMSE tp1
+
+flutter create .
+
+flutter run
