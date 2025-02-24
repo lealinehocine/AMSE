@@ -43,6 +43,7 @@ Chaque page affichée dans l'application est liée à un fichier spécifique de 
 
 Etapes d'installation et d'exécution:
 
+``` bash
 git clone https://github.com/lealinehocine/AMSE.git
 
 cd AMSE tp1
@@ -50,3 +51,4 @@ cd AMSE tp1
 flutter create .
 
 flutter run
+```
