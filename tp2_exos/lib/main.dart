@@ -58,7 +58,7 @@ class _ImageTransformerState extends State<ImageTransformer> {
           Slider(
             value: _rotation,
             min: 0,
-            max: 6.2832, // 2 * pi
+            max: 6.2832, 
             onChanged: (value) {
               setState(() {
                 _rotation = value;
